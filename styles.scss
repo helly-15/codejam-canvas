@@ -1,0 +1,46 @@
+.header{
+    width: 1200px;
+    height: 50px;
+    display: flex;
+    position: relative;
+    &_menu{
+        width: 24px;
+        height: 24px;
+        margin: 10px 10px;
+    }
+    &_title{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        margin-left: 24px;
+    }
+    &_circles{
+        width: 12px;
+        height: 24px;
+        margin: 10px 0;
+        position: absolute ;
+        right: 10px;
+    }
+}
+.main{
+    margin-left: 30px;
+    &_tools{
+        width: 230px;
+        height: 250px;
+        box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.35);
+        margin-top: 30px;
+        &__tool{
+            width: 200px;
+            height: 50px;
+            margin-left: 20px;
+        }
+    }
+    &_color-menu_img{
+        width: 230px;
+        height: 250px;
+        box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.35);
+        margin-top: 90px;
+    }
+}

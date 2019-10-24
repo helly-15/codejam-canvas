@@ -1,0 +1,58 @@
+.header {
+  width: 1200px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.header_menu {
+  width: 24px;
+  height: 24px;
+  margin: 10px 10px;
+}
+
+.header_title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  margin-left: 24px;
+}
+
+.header_circles {
+  width: 12px;
+  height: 24px;
+  margin: 10px 0;
+  position: absolute;
+  right: 10px;
+}
+
+.main {
+  margin-left: 30px;
+}
+
+.main_tools {
+  width: 230px;
+  height: 250px;
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.35);
+  margin-top: 30px;
+}
+
+.main_tools__tool {
+  width: 200px;
+  height: 50px;
+  margin-left: 20px;
+}
+
+.main_color-menu_img {
+  width: 230px;
+  height: 250px;
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.35);
+  margin-top: 90px;
+}
+/*# sourceMappingURL=styles.css.map */
