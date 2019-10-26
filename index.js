@@ -46,35 +46,40 @@ function convertArrayToHex(pixelArray) {
         })
         .then(json => {
             let hexColors= new Array(json.length);
-            //console.log("1: " + hexColors)
+
             for (let i=0; i<json.length; i++){
                 hexColors[i] = new Array(json[i].length)
-                //console.log("2: " + hexColors[i] + " json[i].length " + json[i].length)
-                // hexColors[i].length = json[i].length;
                 for (let j=0; j<(json[i].length); j++) {
-                    //console.log ("2.1: " + hexColors[i]);
-                    //console.log ("i " + i + " j " + j)
-                    //console.log ("i " + i + " j " + j + " hex: " + convertArrayToHex(json[i][j]) + " json[i].length " + json[i].length)
-                    //console.log ("3: " + hexColors[i]);
                     hexColors[i][j]=(convertArrayToHex(json[i][j]));
-                    //console.log ("4: " + hexColors[i]);
-                    
-                    // let bbb=hexColors[i];
-                   // console.log ("5: " + hexColors[i][j]);
                 }         
-                    
-                
             }
             console.log ( hexColors);
             frame32x32=hexColors;
             draw(frame32x32, ctx32x32, 16);
-
-
         }
-           
-            //console.log (frame32x32)
-
         );
+        var rsschoolImg = document.getElementById("rsschoolImg"),
+        ctx       = rsschoolImg.getContext('2d'), // Контекст
+        pic       = new Image();              // "Создаём" изображение
+      pic.src    = 'https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/tasks/stage-2/codejam-canvas/data/image.png';  // Источник изображения
+      pic.onload = function() {    // Событие onLoad, ждём момента пока загрузится изображение
+        ctx.drawImage(pic, 0, 0, 512, 512);  // Рисуем изображение от точки с координатами 0, 0
+      }
+      let button4=document.getElementById ("switcher4");
+      let button32=document.getElementById ("switcher32");
+      let buttonimg=document.getElementById ("switcherImg");
+      let canvasimg=document.getElementById ("rsschoolImg");
+     button4.addEventListener ("click", () => { toggler(canvas4x4) })
+     button32.addEventListener ("click", () => { toggler(canvas32x32) })
+     buttonimg.addEventListener ("click", () => { toggler(canvasimg) })
+      function toggler(canv){
+        
+        if (canv.style.display == "none") {
+          canv.style.display = "block";
+        } else {
+          canv.style.display = "none";
+        }
+      }
 
 
 

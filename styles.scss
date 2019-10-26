@@ -52,6 +52,14 @@
         display: block;
     }
     &_32{
-        display: block;
+        display: none;
     }
+    &_img{
+        display: none;
+    }
+}
+button{
+    width: 200px;
+    height: 50px;
+   
 }

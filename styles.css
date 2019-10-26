@@ -67,6 +67,15 @@
 }
 
 .canvas_32 {
-  display: block;
+  display: none;
+}
+
+.canvas_img {
+  display: none;
+}
+
+button {
+  width: 200px;
+  height: 50px;
 }
 /*# sourceMappingURL=styles.css.map */
