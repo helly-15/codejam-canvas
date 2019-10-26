@@ -44,8 +44,14 @@
         margin-top: 90px;
     }
 }
-#canvas4x4{
+.canvas{
     position: absolute;
     top: 73px;
     left: 773px;
+    &_4{
+        display: block;
+    }
+    &_32{
+        display: block;
+    }
 }

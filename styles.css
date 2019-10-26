@@ -56,9 +56,17 @@
   margin-top: 90px;
 }
 
-#canvas4x4 {
+.canvas {
   position: absolute;
   top: 73px;
   left: 773px;
+}
+
+.canvas_4 {
+  display: block;
+}
+
+.canvas_32 {
+  display: block;
 }
 /*# sourceMappingURL=styles.css.map */
