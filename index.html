@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>codejam-canvas</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header_menu">
+            <img src="assets/menu.png">
+        </div>
+        <h1 class="header_title">
+            CodeJam - Pallete
+        </h1>
+        <div class="header_circles">
+            <img src="assets/Shape.png">
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main_tools">
+            <img src="assets/bucket.png" class="main_tools__tool">
+            <img src="assets/color pick.png" class="main_tools__tool">
+            <img src="assets/move.png" class="main_tools__tool">
+            <img src="assets/transform.png" class="main_tools__tool">
+        </div>
+        <div class="main_color-menue">
+            <img class="mmain_color-menue_img" src="assets/Bottom List.png">
+        </div>
+        <div class="canvas">
+            <canvas id="canvas4x4" class="canvas_4" width="512px" height="512px"> </canvas>
+            <canvas id="canvas32x32" class="canvas_32" width="512px" height="512px"></canvas>
+            <canvas id='rsschoolImg' class="canvas_img" width="512px" height="512px"></canvas>
+        </div>
+        <button id="switcher4">Do you feel like 4x4?</button>
+        <button id="switcher32">Do you feel like 32x32?</button>
+        <button id="switcherImg">Do you feel like img?</button>
+
+    </main>
+</body>
+<script src="index.js"></script>
+</html>
